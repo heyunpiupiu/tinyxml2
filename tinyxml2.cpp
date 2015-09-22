@@ -1427,7 +1427,7 @@ const int XMLElement::GetInt() const
         return std::stoi(FirstChild()->Value());
         
     }
-    return NULL;
+    return 0;
 }
 
 const double XMLElement::GetDouble() const
@@ -1436,7 +1436,7 @@ const double XMLElement::GetDouble() const
         return std::stod(FirstChild()->Value());
         
     }
-    return NULL;
+    return 0.0;
 }
 
 void	XMLElement::SetText( const char* inText )
