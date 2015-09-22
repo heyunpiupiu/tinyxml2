@@ -1396,6 +1396,15 @@ public:
     */
     const char* GetText() const;
 
+    /** self added function
+        function for getting numeric values from the xml text
+     */
+    
+    const int GetInt() const;
+    
+    const double GetDouble() const;
+    
+    
     /** Convenience function for easy access to the text inside an element. Although easy
     	and concise, SetText() is limited compared to creating an XMLText child
     	and mutating it directly.

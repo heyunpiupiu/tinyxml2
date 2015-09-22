@@ -22,6 +22,7 @@ distribution.
 */
 
 #include "tinyxml2.h"
+#include <string>
 
 #include <new>		// yes, this one new style header, is in the Android SDK.
 #if defined(ANDROID_NDK) || defined(__QNXNTO__)
@@ -1420,6 +1421,23 @@ const char* XMLElement::GetText() const
     return 0;
 }
 
+const int XMLElement::GetInt() const
+{
+    if ( FirstChild() && FirstChild()->ToText() ) {
+        return std::stoi(FirstChild()->Value());
+        
+    }
+    return NULL;
+}
+
+const double XMLElement::GetDouble() const
+{
+    if ( FirstChild() && FirstChild()->ToText() ) {
+        return std::stod(FirstChild()->Value());
+        
+    }
+    return NULL;
+}
 
 void	XMLElement::SetText( const char* inText )
 {
