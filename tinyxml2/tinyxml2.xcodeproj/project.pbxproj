@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		037AE8A5151E692700E0F29F /* xmltest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 037AE8A3151E692700E0F29F /* xmltest.cpp */; };
 		03F28B53152E9B1B00D4CD90 /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03F28B4A152E9B1B00D4CD90 /* tinyxml2.cpp */; };
+		6D9365981BB1DA690066FC1F /* instances.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D9365971BB1DA690066FC1F /* instances.cpp */; settings = {ASSET_TAGS = (); }; };
+		6DB793031BB1842C00115233 /* xmltest2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DB793021BB1842C00115233 /* xmltest2.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		037AE86D151E685F00E0F29F /* xmltest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xmltest; sourceTree = BUILT_PRODUCTS_DIR; };
-		037AE8A3151E692700E0F29F /* xmltest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = xmltest.cpp; path = ../xmltest.cpp; sourceTree = SOURCE_ROOT; };
 		03F28B4A152E9B1B00D4CD90 /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml2.cpp; sourceTree = "<group>"; };
 		03F28B4B152E9B1B00D4CD90 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
+		6D9365961BB1D8C90066FC1F /* instances.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = instances.h; sourceTree = "<group>"; };
+		6D9365971BB1DA690066FC1F /* instances.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = instances.cpp; sourceTree = "<group>"; };
+		6DB793021BB1842C00115233 /* xmltest2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = xmltest2.cpp; path = ../xmltest2.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +44,7 @@
 		037AE069151CCC7000E0F29F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				037AE8A3151E692700E0F29F /* xmltest.cpp */,
+				6DB793021BB1842C00115233 /* xmltest2.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -67,9 +70,19 @@
 		03F28B60152E9B4C00D4CD90 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				6D9365951BB1D8A70066FC1F /* instance */,
 				03F28AD7152E9B1B00D4CD90 /* tinyxml2 */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		6D9365951BB1D8A70066FC1F /* instance */ = {
+			isa = PBXGroup;
+			children = (
+				6D9365961BB1D8C90066FC1F /* instances.h */,
+				6D9365971BB1DA690066FC1F /* instances.cpp */,
+			);
+			name = instance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				037AE8A5151E692700E0F29F /* xmltest.cpp in Sources */,
+				6DB793031BB1842C00115233 /* xmltest2.cpp in Sources */,
 				03F28B53152E9B1B00D4CD90 /* tinyxml2.cpp in Sources */,
+				6D9365981BB1DA690066FC1F /* instances.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
